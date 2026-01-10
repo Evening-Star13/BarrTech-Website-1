@@ -123,8 +123,6 @@ body.light-theme .logo {
 .projects-page-layout {
   padding-left: 10px;
   padding-right: 10px;
-  /* If the other pages have a max-width, this one is +20px. 
-     Since your layout is fluid, we reduce the side padding to expand the content area. */
 }
 
 /* Base Card Styling */
@@ -375,10 +373,10 @@ body.light-theme .logo {
 }
 
 .project-card img {
-  width: 60%;
+  width: 100%; /* Changed from 60% to prevent narrow cropping */
   height: 100%;
-  object-fit: cover;
-  padding: 15px 0 35px 0;
+  object-fit: contain; /* Changed from cover to show the whole image */
+  padding: 10px; /* Adjusted padding for better spacing */
 }
 
 .project-info-overlay {
@@ -548,7 +546,7 @@ body.light-theme .logo {
   }
 
   .nav-menu > a {
-    font-size: 1.2rem; /* Adjusted for better visibility */
+    font-size: 1.2rem;
     padding: 15px 0;
     width: 100%;
     text-align: center;
@@ -605,7 +603,7 @@ body.light-theme .logo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
-    width: 100% !important; /* Reset width for mobile */
+    width: 100% !important;
   }
 
   .logo-container {
@@ -618,7 +616,7 @@ body.light-theme .logo {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 1fr;
-  width: 100%; /* Changed from 33px to fill sidebar correctly */
+  width: 100%;
 }
 
 .tech_title {
