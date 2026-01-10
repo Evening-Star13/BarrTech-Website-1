@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarrTech Solutions | Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- EmailJS SDK -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // Your Public Key from EmailJS dashboard
+        emailjs.init("8nwJV7BUoAZ-tQGgi");
+      })();
+    </script>
+  </head>
+  <body class="dark-theme">
+    <section class="grid-container">
+      <header class="section-card header-grid">
+        <div class="logo">
+          <img
+            src="/Assets/Logos/3a.png"
+            alt="BarrTech Solutions Logo"
+            class="logo-dark"
+          />
+          <img
+            src="/Assets/Logos/3a_purplea.png"
+            alt="BarrTech Solutions Logo"
+            class="logo-light"
+          />
+        </div>
+        <h1 class="page-title">BarrTech Solutions</h1>
+        <nav class="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">Our Services</a>
+          <a href="projects.html">Past Projects</a>
+          <a href="#contact-footer">Contact</a>
+          <!-- Theme Toggle Button -->
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+        </nav>
+
+        <!-- Added Hamburger Icon -->
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </header>
+
+      <main class="section-card main-content">
+        <div class="contact-container">
+          <h2>Get In Touch</h2>
+          <p>Have a project in mind? Let's build something great together.</p>
+
+          <form class="contact-form" id="contact-form">
+            <!-- Honeypot for spam protection -->
+            <input type="text" name="_gotcha" style="display: none" />
+
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="_replyto"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                id="company"
+                name="user_company"
+                placeholder="Company Name (optional)"
+              />
+            </div>
+
+            <!-- New Phone Field (optional) -->
+            <div class="form-group">
+              <input
+                type="tel"
+                id="phone"
+                name="user_phone"
+                placeholder="Phone Number (optional)"
+              />
+            </div>
+
+            <div class="form-group">
+              <label
+                for="subject"
+                style="
+                  color: var(--text-primary);
+                  display: block;
+                  margin-bottom: 5px;
+                  text-align: left;
+                  font-size: 0.9rem;
+                "
+                >How can we help?</label
+              >
+              <select id="subject" name="subject" required>
+                <option
+                  value=""
+                  disabled
+                  selected
+                  style="color: var(--accent-color)"
+                >
+                  Select an option
+                </option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="New Project">New Project</option>
+                <option value="Technical Support">Technical Support</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submit-button">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </main>
+
+      <footer id="contact-footer" class="section-card footer">
+        <div class="footer-content">
+          <p>
+            &copy; 2026 BarrTech Solutions |
+            <a href="mailto:BarrTechSolutions@gmail.com"
+              >BarrTechSolutions@gmail.com</a
+            >
+            | <a href="tel:+1234567890">(289) 244-4466</a>
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/Evening-Star13" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://codepen.io/EveningStar-Christopher" target="_blank"
+              ><i class="fa-brands fa-codepen"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Load external script with defer (executes after HTML is parsed) -->
+    <script src="script.js" defer></script>
+  </body>
+</html>

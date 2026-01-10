@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarrTech Solutions | Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark-theme">
+    <section class="grid-container">
+      <header class="section-card header-grid">
+        <div class="logo">
+          <img
+            src="/Assets/Logos/3a.png"
+            alt="BarrTech Solutions Logo"
+            class="logo-dark"
+          />
+          <img
+            src="/Assets/Logos/3a_purplea.png"
+            alt="BarrTech Solutions Logo"
+            class="logo-light"
+          />
+        </div>
+        <h1 class="page-title">BarrTech Solutions</h1>
+        <nav class="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">Our Services</a>
+          <a href="#">Past Projects</a>
+          <a href="contact.html">Contact</a>
+          <!-- Theme Toggle Button -->
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+        </nav>
+
+        <!-- Added Hamburger Icon -->
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </header>
+
+      <aside class="section-card sidebar sidebar-left">
+        <h3>Stack</h3>
+      </aside>
+
+      <main class="section-card main-content">
+        <h2>Our Projects</h2>
+        <p>Explore our latest work and technical solutions.</p>
+
+        <div class="projects-grid">
+          <div
+            class="project-card"
+            onclick="openModal('BarrTech Solutions Security & Software', 'Secure cloud storage.', 'https://github.com')"
+          >
+            <div class="project-info-overlay">
+              <h4>BarrTech Solutions Security & Software</h4>
+            </div>
+            <img src="/Assets/Logos/1a.png" alt="P1" />
+          </div>
+          <div
+            class="project-card"
+            onclick="openModal('Color Picker', 'Color & Gradient Generator.', 'https://color-picker-13.netlify.app/')"
+          >
+            <div class="project-info-overlay"><h4>Color Picker</h4></div>
+            <img src="/Assets/Project Images/Color Picker.png" alt="P2" />
+          </div>
+          <div
+            class="project-card"
+            onclick="openModal('Shadow Generator', 'Box & Text Shadows', 'https://shadow-gen-13.netlify.app')"
+          >
+            <div class="project-info-overlay"><h4>Shadow Generator</h4></div>
+            <img
+              src="/Assets/Project Images/Screenshot 2026-01-05 192939.png"
+              alt="P3"
+            />
+          </div>
+          <div
+            class="project-card"
+            onclick="openModal('Recipe Manager Pro', 'Your Mobile Recipe Cookbook', 'https://my-great-cookbook.netlify.app/')"
+          >
+            <div class="project-info-overlay"><h4>Recipe Manager Pro</h4></div>
+            <img src="/Assets/Project Images/Recipe Manager Pro.png" alt="P4" />
+          </div>
+          <div
+            class="project-card"
+            onclick="openModal('DataViz', 'Data Dashboard.', 'https://github.com')"
+          >
+            <div class="project-info-overlay"><h4>DataViz</h4></div>
+            <img
+              src="https://via.placeholder.com/300x200/111/0dff1f?text=DataViz"
+              alt="P5"
+            />
+          </div>
+          <div
+            class="project-card"
+            onclick="openModal('HealthLink', 'Telemedicine App.', 'https://github.com')"
+          >
+            <div class="project-info-overlay"><h4>HealthLink</h4></div>
+            <img
+              src="https://via.placeholder.com/300x200/111/0dff1f?text=HealthLink"
+              alt="P6"
+            />
+          </div>
+          <div
+            class="project-card"
+            onclick="openModal('SecurePay', 'Blockchain Gateway.', 'https://github.com')"
+          >
+            <div class="project-info-overlay"><h4>SecurePay</h4></div>
+            <img
+              src="https://via.placeholder.com/300x200/111/0dff1f?text=SecurePay"
+              alt="P7"
+            />
+          </div>
+          <div
+            class="project-card"
+            onclick="openModal('AutoLog', 'Server Auditor.', 'https://github.com')"
+          >
+            <div class="project-info-overlay"><h4>AutoLog</h4></div>
+            <img
+              src="https://via.placeholder.com/300x200/111/0dff1f?text=AutoLog"
+              alt="P8"
+            />
+          </div>
+          <div
+            class="project-card"
+            onclick="openModal('StreamLine', 'Video API.', 'https://github.com')"
+          >
+            <div class="project-info-overlay"><h4>StreamLine</h4></div>
+            <img
+              src="https://via.placeholder.com/300x200/111/0dff1f?text=StreamLine"
+              alt="P9"
+            />
+          </div>
+        </div>
+      </main>
+
+      <aside class="section-card sidebar sidebar-right tech_stack">
+        <h3 class="section-title mb-6 tech_title">
+          Security & Protection // Tech Stack
+        </h3>
+        <br />
+        <p class="tech_text">
+          At BarrTech Solutions, we utilize a professional-grade tech stack
+          designed for high-availability and security. From robust backend
+          frameworks like Django and Laravel to modern frontend libraries like
+          Tailwind and TypeScript, our tools ensure your digital infrastructure
+          is scalable, lightning-fast, and protected against modern threats.
+        </p>
+      </aside>
+
+      <!-- Tech Logos -->
+
+      <div
+        class="grid grid-cols-3 gap-y-8 gap-x-4 items-center justify-items-center logo-container"
+      >
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="Python"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            alt="Python"
+            class="tech-logo logo-python"
+          />
+        </div>
+
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="Laravel"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+            alt="Laravel"
+            class="tech-logo logo-laravel"
+          />
+        </div>
+
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="Django"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+            alt="Django"
+            class="tech-logo logo-django"
+          />
+        </div>
+
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="HTML"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="HTML"
+            class="tech-logo logo-html"
+          />
+        </div>
+
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="CSS"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="CSS"
+            class="tech-logo logo-css"
+          />
+        </div>
+
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="Javascript"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript"
+            class="tech-logo logo-javascript"
+          />
+        </div>
+
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="MongoDb"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+            alt="MongoDB"
+            class="tech-logo logo-mongodb"
+          />
+        </div>
+
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="MySQL"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            alt="SQL"
+            class="tech-logo logo-mysql"
+          />
+        </div>
+
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="Typescript"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+            alt="TypeScript"
+            class="tech-logo logo-typescript"
+          />
+        </div>
+
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="Tailwind"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+            alt="Tailwind"
+            class="tech-logo logo-tailwind"
+          />
+        </div>
+
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="Bootstrap"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+            alt="Bootstrap"
+            class="tech-logo logo-bootstrap"
+          />
+        </div>
+
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="Git"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+            alt="Git"
+            class="tech-logo logo-git"
+          />
+        </div>
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="Docker"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+            alt="Docker"
+            class="tech-logo logo-docker"
+          />
+        </div>
+
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="Kubernetes"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+            alt="Kubernetes"
+            class="tech-logo logo-kubernetes"
+          />
+        </div>
+
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="Livewire"
+        >
+          <img
+            src="https://cdn.simpleicons.org/livewire/FB70A9"
+            alt="Livewire"
+            class="tech-logo logo-livewire"
+          />
+        </div>
+
+        <div
+          class="tech-item flex flex-col items-center group cursor-default"
+          title="Postgresql"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+            alt="PostgreSQL"
+            class="tech-logo logo-postgresql"
+          />
+        </div>
+      </div>
+
+      <footer id="contact-footer" class="section-card footer">
+        <div class="footer-content">
+          <p>
+            &copy; 2026 BarrTech Solutions |
+            <a href="mailto:BarrTechSolutions@gmail.com"
+              >BarrTechSolutions@gmail.com</a
+            >
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/Evening-Star13" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://codepen.io/EveningStar-Christopher" target="_blank"
+              ><i class="fa-brands fa-codepen"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle" style="color: var(--accent-color)"></h2>
+        <p id="modalDescription" style="margin: 20px 0"></p>
+        <a id="modalLink" href="#" target="_blank" class="modal-btn"
+          >Launch Project</a
+        >
+      </div>
+    </div>
+
+    <script>
+      function openModal(title, desc, link) {
+        document.getElementById("modalTitle").innerText = title;
+        document.getElementById("modalDescription").innerText = desc;
+        document.getElementById("modalLink").href = link;
+        document.getElementById("projectModal").style.display = "flex";
+      }
+      function closeModal() {
+        document.getElementById("projectModal").style.display = "none";
+      }
+      window.onclick = function (e) {
+        if (e.target.className === "modal") closeModal();
+      };
+    </script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
