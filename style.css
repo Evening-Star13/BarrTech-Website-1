@@ -613,7 +613,7 @@ body.light-theme .logo {
 
 /* Projects Aside Tech Stack */
 .tech_stack {
-  /* display: grid; */
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 1fr;
   width: 100%;
